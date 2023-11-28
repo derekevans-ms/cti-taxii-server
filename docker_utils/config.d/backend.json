@@ -1,7 +1,6 @@
 {
   "backend": {
-    "module_class": "MongoBackend",
-    "uri": "mongodb://DUMMYUSER:DUMMYPASSWORD@mongo:27017/",
+    "module_class": "MemoryBackend",
     "filename": "medallion/test/data/default_data.json"
   }
 }
