@@ -7,8 +7,8 @@ services:
     build:
       context: .
       dockerfile: docker_utils/Dockerfile
-    command: [sh, -c, "medallion --host 0.0.0.0"]
+    command: [sh, -c, "medallion --host 0.0.0.0 --port 80"]
     environment:
       MEDALLION_BACKEND_MODULE_CLASS: "MemoryBackend"
     ports:
-      - "5000:5000"
+      - "80:80"
