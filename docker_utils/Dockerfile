@@ -3,7 +3,6 @@ FROM python:alpine
 COPY . /opt/taxii
 WORKDIR /opt/taxii
 RUN pip install --upgrade pip setuptools \
-    && pip install pymongo \
     && pip install .
 
 # Set up the default configuration files
